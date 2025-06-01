@@ -1,0 +1,302 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background: white;
+}
+
+.header {
+  overflow: hidden;
+  padding: 5px 10px;
+  margin: 0;
+  background-color: #d3e3fd;
+}
+
+.logo {
+  float: left;
+  padding: 0 0 0.5% 200px;
+}
+
+.logo a {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav {
+  float: right;
+  padding: 2% 10% 2% 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.topnav a {
+  display: inline-block;
+  color: #333;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.main {
+  overflow: hidden;
+  width: 60%;
+  margin: 5% auto 0 auto;
+}
+
+.aside {
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+  margin-right: 2%;
+}
+
+.album_image {
+  border: 1px solid #003046;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.album_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.album_links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.album_links li {
+  margin-bottom: 10px;
+}
+
+.album_links a {
+  text-decoration: none;
+  color: #003046;
+  font-weight: bold;
+}
+
+.section {
+  float: left;
+  width: 68%;
+  box-sizing: border-box;
+}
+
+.album_info {
+  border: 1px solid #003046;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 10px;
+  position: relative;
+  height: auto;
+}
+
+.album_info .content {
+  height: auto;
+}
+
+.reviews {
+  border: 1px solid #003046;
+  box-sizing: border-box;
+  padding: 15px;
+  height: auto;
+}
+
+.review_item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.review_item:last-child {
+  border-bottom: none;
+}
+
+.footer {
+  clear: both;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    width: 100%;
+    text-align: center;
+  }
+  .logo {
+    text-align: center;
+    padding: 0;
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .topnav {
+    padding: 2% 0 2% 0;
+  }
+  .main {
+    width: 80%;
+  }
+  .aside,
+  .section {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .album_info {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .reviews {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    width: 100%;
+    text-align: center;
+  }
+  .logo {
+    text-align: center;
+    padding: 0;
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .topnav {
+    padding: 2% 0 2% 0;
+  }
+  .main {
+    width: 80%;
+  }
+  .aside,
+  .section {
+    width: 100%;
+  }
+  .album_info {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .reviews {
+    height: auto;
+  }
+
+}
+
+        </style>
+        </head>
+        <body>
+        
+        
+
+<div class="header">
+    <div class="logo"><a href="main.html"><h1>국음동</h1><br>국내음악동산</a></div>
+    <div class="topnav">
+    <a href="magazine.html">매거진</a>
+    <a href="review.html">리뷰</a>
+    <a href="shop.html">장터</a>
+    <a href="community.html">커뮤니티</a>
+    <a href="others.html">다른 동산</a>
+    <a href="#">검색</a>
+    <a href="#">로그인</a>
+    <a href="#">마이페이지</a>
+  </div> 
+</div>
+<div class="main">
+  <div class="aside">
+    <div class="album_image">
+      <img src="201.JPG" alt="앨범 커버">
+    </div>
+    <div class="album_links">
+      <ul>
+        <li><a href="#">유튜브 뮤직</a></li>
+        <li><a href="#">스포티파이</a></li>
+        <li><a href="#">멜론</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="album_info">
+      <div class="content">
+        <p><strong>Artist:</strong> 검정치마 [The Black Skirts]</p>
+        <p><strong>Type:</strong> Album</p>
+        <p><strong>Released:</strong> 18 November 2008</p>
+        <p><strong>RYM Rating:</strong> 3.65 / 5.0 from 958 ratings</p>
+        <p><strong>Ranked:</strong> #100 for 2008, #8,200 overall</p>
+        <p><strong>Genres:</strong> Indie Rock, Power Pop</p>
+        <p><strong>Descriptors:</strong> melodic, male vocalist, energetic, playful, bittersweet, warm, mellow, soft, conscious, complex, happy, uplifting, nihilistic</p>
+        <p><strong>Languages:</strong> English, Korean, Spanish</p>
+         <form>
+      <p><strong>Rate this album:</strong></p>
+      <input type="checkbox" name="rating" value="1"> 1
+      <input type="checkbox" name="rating" value="2"> 2
+      <input type="checkbox" name="rating" value="3"> 3
+      <input type="checkbox" name="rating" value="4"> 4
+      <input type="checkbox" name="rating" value="5"> 5
+    </form>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <div class="review_item">
+        <p><strong>Agirapo</strong> (Mar 12 2025) <em>rate 4</em></p>
+        <p>한국적인데 미국적이다<br>이게 로컬라이징인가</p>
+      </div>
+      <div class="review_item">
+        <p><strong>LEGENDHANNAM</strong> (Nov 06 2024) <em>rate 4</em></p>
+        <p>21세기 문익점 센세<br>
+        전여친 찾으며 울부짖는 소몰이 창법 혹은 지갑 두둑한 이모삼촌팬을 노리는 동아시아식 교묘한 섹스어필만이 낭낭하던 그 시절 조휴일은 이 앨범 내면서 무슨 생각을 했을까?</p>
+      </div>
+      <div class="review_item">
+        <p><strong>keondollee</strong> (Sep 18 2024) <em>rate 3</em></p>
+        <p>노래 존나 못하네<br>음치임? (농담입니다)<br>My list: 좋아해줘/antifreeze</p>
+      </div>
+      <div class="review_item">
+        <p><strong>dhwlgn_926</strong> (Aug 16 2024) <em>rate 5</em></p>
+        <p>201<br>2008년의 나온 앨범이라고 믿기지 않는 사운드와 그 속에서 풀어지는 지나치게 솔직하고 서툰 청춘의 사랑</p>
+      </div>
+      <div class="review_item">
+        <p><strong>antatanonaka</strong> (Jun 10 2024) <em>rate 4</em></p>
+        <p>가사가 직설적이라 마음에 너무 들었다 특히 좋아해줘 나에게 음악의 재미를 알려준 고마운 앨범</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+
+<div class="footer">
+    서비스 이용약관<br>
+    개인정보 보호정책<br>
+    Copyright @국음동 All rights reserved.
+</div>
+</body>
+</html> 

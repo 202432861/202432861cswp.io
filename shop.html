@@ -1,0 +1,335 @@
+    <!DOCTYPE html><!--14-7--><!--13주차 수업 관련 폴더 이게 인덱스/ 기획이랑 사이트 폴던-->
+    <html>
+    <head>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Arial;
+        padding: 10px;
+        background: white;
+    
+    }
+    .header {
+        overflow: hidden;
+        padding: 5px 10px;
+        margin: 0 0 0 0px;
+        background-color: #d3e3fd;
+        height: auto
+    }
+
+    .logo {
+        background-color: #d3e3fd;
+        float: left;
+        padding: 0 0 0.5% 200px;
+        
+    }
+    .logo a {
+        display: inline-block;
+        color: #333;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .logo a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .topnav {
+        background-color: #d3e3fd;
+        
+        float: right;
+        padding: 2% 10% 2% 0 ;
+        
+        text-align: center;
+        font-weight: bold;
+        
+        
+    }
+
+    .topnav a {
+        display: inline-block;
+        color: #333;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .topnav a:hover {
+        background-color: white;
+        color: black;
+    }
+
+.main{
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+    .search-options {
+    margin-bottom: 6%;
+    overflow: hidden;
+    }
+
+    .search-options .search-box {
+    float: left;
+    width: 78%;
+    border: 1px solid #003046;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    }
+
+    .search-options .options {
+    float: right;
+    width: 18%;
+    border: 1px solid #003046;
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-sizing: border-box;
+    }
+    
+.main-links {
+  clear: both;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-links a {
+  float: left;
+  width: 23%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.main-links a:nth-child(4n) {
+  margin-right: 0;
+}
+
+.link-item {
+  border: 1px solid #003046;
+  background-color: #fff;
+  overflow: hidden;
+  height: 300px;
+}
+
+.link-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.link-item .info {
+  padding: 8px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.link-item .info .name {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.link-item .info .price {
+  color: #555;
+}
+
+.link-item:hover {
+  background-color: #f0f8ff;
+}
+    
+
+
+
+
+
+
+    .footer{
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+
+    @media screen and (max-width: 800px){
+        .header{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    .logo{
+        text-align: center;
+        padding: 0 0 0.5% 0;
+        float: none;         
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .topnav{
+        width:  0 auto;
+        padding: 2% 0% 2% 0 ;
+    }
+    .main{
+    width: 80%;
+    }
+    .main-links a {
+    width: 48%;
+    margin-right: 2%;
+  }
+  
+
+    }
+
+
+    @media screen and (max-width: 400px){
+        .header{
+        width: 100% ;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .logo{
+        text-align: center;
+        padding: 0 0 0.5% 0;
+        float: none;         
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .topnav{
+        width:  0 auto;
+        padding: 2% 0% 2% 0 ;
+    }
+    .main{
+    width: 80%;
+    }
+    .main-links a {
+    width: 48%;
+    margin-right: 2%;
+  }
+
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+
+<div class="header">
+    <div class="logo"><a href="main.html"><h1>국음동</h1><br>국내음악동산</a></div>
+    <div class="topnav">
+    <a href="magazine.html">매거진</a>
+    <a href="review.html">리뷰</a>
+    <a href="shop.html">장터</a>
+    <a href="community.html">커뮤니티</a>
+    <a href="others.html">다른 동산</a>
+    <a href="#">검색</a>
+    <a href="#">로그인</a>
+    <a href="#">마이페이지</a>
+  </div> 
+</div>
+    <div class="main">
+    <div class="search-options">      
+        <div class="search-box">
+         <input type="text">
+        </div>
+        <div class="options">
+            <select>
+                <option>인기글</option>
+                <option>정보</option>
+                <option>일반</option>
+            </select>
+        </div>
+    </div>
+     
+<div class="main-links">
+  <a href="shop_sub.html">
+    <div class="link-item">
+      <img src="201.JPG" alt="상품1">
+      <div class="info">
+        <div class="name"> 201  cd 새상품</div>
+        <div class="price">₩25,000</div>
+      </div>
+    </div>
+  </a>
+  <a href="shop_sub2.html">
+    <div class="link-item">
+      <img src="shopimg2.jpg" alt="상품2">
+      <div class="info">
+        <div class="name">상품명 2</div>
+        <div class="price">₩8,500</div>
+      </div>
+    </div>
+  </a>
+  <a href="shop_sub3.html">
+    <div class="link-item">
+      <img src="shopimg3.jpg" alt="상품3">
+      <div class="info">
+        <div class="name">Nirvana Nevermind CD 미국반</div>
+        <div class="price">₩30,000</div>
+      </div>
+    </div>
+  </a>
+  <a href="shop_sub3.html">
+    <div class="link-item">
+      <img src="shopimg4.jpg" alt="상품4">
+      <div class="info">
+        <div class="name">상품명 4</div>
+        <div class="price">₩9,200</div>
+      </div>
+    </div>
+  </a>
+
+  <a href="shop_sub4.html">
+    <div class="link-item">
+      <img src="shopimg5.jpg" alt="상품5">
+      <div class="info">
+        <div class="name">상품명 5</div>
+        <div class="price">₩11,300</div>
+      </div>
+    </div>
+  </a>
+  <a href="shop_sub5.html">
+    <div class="link-item">
+      <img src="shopimg6.jpg" alt="상품6">
+      <div class="info">
+        <div class="name">상품명 6</div>
+        <div class="price">₩13,750</div>
+      </div>
+    </div>
+  </a>
+  <a href="shop_sub6.html">
+    <div class="link-item">
+      <img src="shopimg7.jpg" alt="상품7">
+      <div class="info">
+        <div class="name">상품명 7</div>
+        <div class="price">₩7,900</div>
+      </div>
+    </div>
+  </a>
+  <a href="shop_sub7.html">
+    <div class="link-item">
+      <img src="shopimg8.jpg" alt="상품8">
+      <div class="info">
+        <div class="name">상품명 8</div>
+        <div class="price">₩10,450</div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+    <div class="footer">
+        서비스 이용약관<br>
+        개인정보 보호정책<br>
+ Copyright @국음동 All rights reserved.
+    </div>
+    </body>
+    </html> 

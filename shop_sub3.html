@@ -1,0 +1,214 @@
+    <!DOCTYPE html><!--14-7--><!--13주차 수업 관련 폴더 이게 인덱스/ 기획이랑 사이트 폴던-->
+    <html>
+    <head>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Arial;
+        padding: 10px;
+        background: white;
+    
+    }
+    .header {
+        overflow: hidden;
+        padding: 5px 10px;
+        margin: 0 0 0 0px;
+        background-color: #d3e3fd;
+        height: auto
+    }
+
+    .logo {
+        background-color: #d3e3fd;
+        float: left;
+        padding: 0 0 0.5% 200px;
+        
+    }
+    .logo a {
+        display: inline-block;
+        color: #333;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .logo a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .topnav {
+        background-color: #d3e3fd;
+        
+        float: right;
+        padding: 2% 10% 2% 0 ;
+        
+        text-align: center;
+        font-weight: bold;
+        
+        
+    }
+
+    .topnav a {
+        display: inline-block;
+        color: #333;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .topnav a:hover {
+        background-color: white;
+        color: black;
+    }
+
+.main{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.product_image {
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto 20px auto;
+  border: 1px solid #003046;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.product_image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
+}
+
+.product_details {
+  padding-left: 20%;
+
+  width: 100%;
+  border: 1px solid #003046;
+  padding: 15px;
+}
+
+.product_details p {
+  margin: 5px 0;
+}   
+
+
+
+
+
+
+    .footer{
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+
+    @media screen and (max-width: 800px){
+        .header{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    .logo{
+        text-align: center;
+        padding: 0 0 0.5% 0;
+        float: none;         
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .topnav{
+        width:  0 auto;
+        padding: 2% 0% 2% 0 ;
+    }
+    .main{
+    width: 90%;
+    }
+    .product_image {
+    max-width: 100%;
+    max-height: 300px;
+  }
+    
+  
+
+    }
+
+
+    @media screen and (max-width: 400px){
+        .header{
+        width: 100% ;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .logo{
+        text-align: center;
+        padding: 0 0 0.5% 0;
+        float: none;         
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .topnav{
+        width:  0 auto;
+        padding: 2% 0% 2% 0 ;
+    }
+    .main{
+    width: 90%;
+    }
+    .product_image {
+    max-width: 100%;
+    max-height: 300px;
+  }
+    
+
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+
+<div class="header">
+    <div class="logo"><a href="main.html"><h1>국음동</h1><br>국내음악동산</a></div>
+    <div class="topnav">
+    <a href="magazine.html">매거진</a>
+    <a href="review.html">리뷰</a>
+    <a href="shop.html">장터</a>
+    <a href="community.html">커뮤니티</a>
+    <a href="others.html">다른 동산</a>
+    <a href="#">검색</a>
+    <a href="#">로그인</a>
+    <a href="#">마이페이지</a>
+  </div> 
+</div>
+
+  <div class="main">
+    <div class="product_image">
+      <img src="shopimg4.jpg" alt="상품 사진">
+    </div>
+    <div class="product_details">
+      <h3><strong>상품 이름:</strong> Nirvana Nevermind CD 미국반</h3>
+      <p><strong>가격:</strong> ₩30,000</p>
+      <p><strong>상태:</strong> 사용감 보통</p>
+      <p><strong>설명:</strong> 1991년 오리지널 발매판 CD, 디스크 상태 양호함.</p><br>
+      <p><strong>연락처:</strong> 010-2345-6789</p>
+    </div>
+  </div>
+
+
+
+    <div class="footer">
+        서비스 이용약관<br>
+        개인정보 보호정책<br>
+ Copyright @국음동 All rights reserved.
+    </div>
+    </body>
+    </html> 

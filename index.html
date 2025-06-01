@@ -1,0 +1,408 @@
+<!DOCTYPE html><!--14-7--><!--13주차 수업 관련 폴더 이게 인덱스/ 기획이랑 사이트 폴던-->
+<html>
+<head>
+<style>
+*{
+    box-sizing: border-box;
+}
+
+   body{
+        font-family: Arial;
+        padding: 10px;
+        background: white;
+    
+    }
+    .header {
+        overflow: hidden;
+        padding: 5px 10px;
+        margin: 0 0 0 0px;
+        background-color: #d3e3fd;
+        height: auto
+    }
+
+    .logo {
+        background-color: #d3e3fd;
+        float: left;
+        padding: 0 0 0.5% 200px;
+        
+    }
+    .logo a {
+        display: inline-block;
+        color: #333;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .logo a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .topnav {
+        background-color: #d3e3fd;
+        
+        float: right;
+        padding: 2% 10% 2% 0 ;
+        
+        text-align: center;
+        font-weight: bold;
+        
+        
+    }
+
+    .topnav a {
+        display: inline-block;
+        color: #333;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .topnav a:hover {
+        background-color: white;
+        color: black;
+    }
+
+
+
+
+
+.main {
+    padding: 5% 0 0 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 50px; 
+}
+
+.thumbnail {
+    border: 5px solid #d3e3fd;
+    overflow: hidden;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;  
+    vertical-align: middle;
+}
+
+.thumbnail.large {
+    width: 27%;
+    height: 27%;
+    z-index: 10;         
+    margin: 0 2%;
+}
+
+.thumbnail.medium-left {
+    width: 20%;
+    height: 20%;
+    margin: 0 -10% 0 0;
+    z-index: 5;
+}
+
+.thumbnail.medium-right {
+    width: 20%;
+    height: 20%;
+    margin: 0 0 0 -10%;
+    z-index: 5;
+}
+
+.thumbnail.small-left {
+    width: 14%;
+    height: 14%;
+    margin: 0 -4% 0 0;   
+    z-index: 1;
+}
+
+.thumbnail.small-right {
+    width: 14%;
+    height: 14%;
+    margin: 0 0 0 -4%;
+    z-index: 1;
+}
+
+.thumbnail a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+.leftcolum{
+    float: left;
+    width: 35%;
+    height: 20%;
+    margin: 5% 5% 0 10% ;
+    border: 0.5px solid black;
+}
+
+.leftcolum h2{
+    text-align: center;
+
+}
+.leftcolum, .rightcolum{
+    flex: 0;
+}
+.rightcolum{
+    float: left;
+    width: 35%;
+    height: 20%;
+    margin: 5% 10% 0 5%;
+    border: 0.5px solid black;
+
+}
+
+
+.rightcolum h2{
+    text-align: center;
+}
+.rightcolum ul {
+    list-style: none;
+}
+.rightcolum li a {
+    display: block;
+    text-decoration: none;
+    color: #000;                  
+    font-size: 14px;
+}
+.rightcolum li {
+    border: 1px solid #333;     
+    margin: 8px 10px;            
+    padding: 10px;
+    background-color: #d3e3fd;
+}
+.rightcolum li:hover {
+    background-color: #d3e3fd;
+}
+
+
+.fakimg{
+    background-color: #d3e3fd;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.card{
+    background-color: #d3e3fd;
+    padding: 20px;
+
+}
+
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background: d3e3fd;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 800px){
+    .leftcolum, .rightcolum{
+        width: 100%;
+        padding: 0;
+        margin: 5% 0 0 0 ;
+    }
+        .header{
+        width: 100% ;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .logo{
+        text-align: center;
+        padding: 0 0 0.5% 0;
+        float: none;         
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .topnav{
+        width:  0 auto;
+        padding: 2% 0% 2% 0 ;
+    }
+.thumbnail.large {
+    width: 50%;
+    height: 50%;
+    z-index: 10;         
+}
+
+.thumbnail.medium-left {
+    width: 40%;
+    height: 40%;
+    margin: 0 -30% 0 0;
+}
+
+.thumbnail.medium-right {
+    width: 40%;
+    height: 40%;
+    margin: 0 0 0 -30%;
+}
+
+.thumbnail.small-left {
+    width: 30%;
+    height: 30%;
+    margin: 0 -25% 0 0;   
+}
+
+.thumbnail.small-right {
+    width: 30%;
+    height: 30%;
+    margin: 0 0 0 -25%;
+}
+}
+
+
+@media screen and (max-width: 400px){
+        .leftcolum, .rightcolum{
+        width: 100%;
+        padding: 0;
+        margin: 5% 0 0 0 ;
+    }
+        .header{
+        width: 100% ;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .logo{
+        text-align: center;
+        padding: 0 0 0.5% 0;
+        float: none;         
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .topnav{
+        width:  0 auto;
+        padding: 2% 0% 2% 0 ;
+    }
+    
+.thumbnail.large {
+    width: 50%;
+    height: 50%;
+    z-index: 10;         
+}
+
+.thumbnail.medium-left {
+    width: 40%;
+    height: 40%;
+    margin: 0 -30% 0 0;
+}
+
+.thumbnail.medium-right {
+    width: 40%;
+    height: 40%;
+    margin: 0 0 0 -30%;
+}
+
+.thumbnail.small-left {
+    width: 30%;
+    height: 30%;
+    margin: 0 -25% 0 0;   
+}
+
+.thumbnail.small-right {
+    width: 30%;
+    height: 30%;
+    margin: 0 0 0 -25%;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo"><a href="main.html"><h1>국음동</h1><br>국내음악동산</a></div>
+    <div class="topnav">
+    <a href="magazine.html">매거진</a>
+    <a href="review.html">리뷰</a>
+    <a href="shop.html">장터</a>
+    <a href="community.html">커뮤니티</a>
+    <a href="others.html">다른 동산</a>
+    <a href="#">검색</a>
+    <a href="#">로그인</a>
+    <a href="#">마이페이지</a>
+  </div> 
+</div>
+
+<div class="main">
+    <div class="thumbnail small-left">
+    <a href="https://example.com/news1">
+      <img src="슬라이드3.jpg" >
+    </a>
+  </div>
+
+  <div class="thumbnail medium-left">
+    <a href="https://example.com/magazine1">
+      <img src="슬라이드2.JPG" >
+    </a>
+  </div>
+
+
+  <div class="thumbnail large">
+    <a href="https://example.com/feature">
+      <img src="슬라이드1.JPG" >
+    </a>
+  </div>
+
+  <div class="thumbnail medium-right">
+    <a href="https://example.com/live1">
+      <img src="슬라이드4.jpg" >
+    </a>
+  </div>
+
+  <div class="thumbnail small-right">
+    <a href="https://example.com/news2">
+      <img src="슬라이드5.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="row">
+    <div class="leftcolum">
+        <div class="card">
+            <h2>실시간 리뷰</h2>
+            <div class="fakeimg" style="height: 200px;">
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="rightcolum">
+        <div class="card">
+            <h2>HOT 게시물물</h2>
+            <UL>
+                <li><a href="#">첫 번째 뜨거운 글</a></li>
+                <li><a href="#">두 번째 인기 글</a></li>
+                <li><a href="#">세 번째 이슈 글</a></li>
+                <li><a href="#">네 번째 화제 글</a></li>
+            </UL>
+        </div>
+        
+        
+    </div>
+</div>
+
+<div class="footer">
+        서비스 이용약관<br>
+        개인정보 보호정책<br>
+ Copyright @국음동 All rights reserved.
+    </div>
+</body>
+</html> 
